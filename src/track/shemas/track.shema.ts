@@ -22,7 +22,7 @@ export class Track {
     @Prop()
     picture: string;
 
-    @Prop()
+    @Prop( )
     audio: string;
 
     @Prop({type: [{type: ObjectId}]})
