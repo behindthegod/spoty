@@ -17,4 +17,4 @@ export class Comment {
     track: Track;
 }
 
-export const CommentSchema = SchemaFactory.createForClass(Comment);
+export const CommentSchema = SchemaFactory.createForClass(Comment)

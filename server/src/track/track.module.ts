@@ -4,6 +4,7 @@ import {TrackService} from "./track.service";
 import {MongooseModule} from "@nestjs/mongoose";
 import {Track, TrackSchema} from "./shemas/track.shema";
 import {Comment, CommentSchema} from "./shemas/comment.shema";
+import {FileService} from "../file/file.service";
 
 
 @Module({
@@ -13,7 +14,7 @@ import {Comment, CommentSchema} from "./shemas/comment.shema";
     ],
 
     controllers: [TrackController],
-    providers: [TrackService]
+    providers: [TrackService, FileService]
 })
 
 export class TrackModule {}
